@@ -1,0 +1,25 @@
+{
+  "name": "wanted-pre-onboarding-challenge-fe-2",
+  "version": "1.0.0",
+  "description": "wanted-pre-onboarding-challenge-fe-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "docs": "jsdoc -c jsdoc.json",
+    "type": "git",
+    "url": "git+https://github.com/dahye1013/wanted-pre-onboarding-challenge-fe-2.git"
+  },
+  "keywords": [],
+  "author": "dahye shin",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.6.10"
+  },
+  "bugs": {
+    "url": "https://github.com/dahye1013/wanted-pre-onboarding-challenge-fe-2/issues"
+  },
+  "homepage": "https://github.com/dahye1013/wanted-pre-onboarding-challenge-fe-2#readme"
+}
