@@ -4,10 +4,7 @@
 class Tag {
   id;
   content;
-  constructor(tag) {
-    this.id = tag.id;
-    this.content = tag.content;
-  }
+  constructor(tag) {}
   /**
    * @description Tag 객체 생성 함수
    * @param {Object} tag
@@ -15,9 +12,7 @@ class Tag {
    * @param {string} todo.content
    * @returns {Tag}
    */
-  static create({ id, content }) {
-    return new Tag(content);
-  }
+  static create({ id, content }) {}
 }
 
 export default Tag;
