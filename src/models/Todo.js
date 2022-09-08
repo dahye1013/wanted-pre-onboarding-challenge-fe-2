@@ -7,7 +7,12 @@ class Todo {
   isDone = false;
   category = "";
   tags = [];
-  constructor(todo) {}
+  constructor(todo) {
+    this.id = Date.now();
+    this.content = todo.content;
+    this.category = todo.category;
+    this.tags = todo.tags;
+  }
   /**
    * @description Todo 객체 생성 함수
    * @param {Object} todo
@@ -17,7 +22,9 @@ class Todo {
    * @param {Tag[]} todo.tags
    * @returns {Todo}
    */
-  static create(todo) {}
+  static create(todo) {
+    return new Todo(todo);
+  }
 }
 
 export default Todo;
