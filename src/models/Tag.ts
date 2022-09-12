@@ -1,10 +1,10 @@
 /**
  * @class
  */
-class Tag {
+class TagInstance implements Tag {
   id;
   content;
-  constructor(tag) {
+  constructor(tag: Tag) {
     this.id = tag.id;
     this.content = tag.content;
   }
@@ -15,9 +15,9 @@ class Tag {
    * @param {string} todo.content
    * @returns {Tag}
    */
-  static create({ id, content }) {
-    return new Tag({ id, content });
+  static create(tag: Tag) {
+    return new TagInstance(tag);
   }
 }
 
-export default Tag;
+export default TagInstance;

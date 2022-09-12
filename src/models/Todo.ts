@@ -1,16 +1,19 @@
+import TagInstance from "./Tag";
 /**
  * @class
  */
-class Todo {
+class TodoInstance implements Todo {
   id;
-  content = "";
-  isDone = false;
-  category = "";
-  tags = [];
-  constructor(todo) {
-    this.id = Date.now();
+  content;
+  isDone;
+  category;
+  tags;
+
+  constructor(todo: Todo) {
+    this.id = todo.id;
     this.content = todo.content;
     this.category = todo.category;
+    this.isDone = false;
     this.tags = todo.tags;
   }
   /**
@@ -22,9 +25,9 @@ class Todo {
    * @param {Tag[]} todo.tags
    * @returns {Todo}
    */
-  static create(todo) {
-    return new Todo(todo);
+  static create(todo: Todo) {
+    return new TodoInstance(todo);
   }
 }
 
-export default Todo;
+export default TodoInstance;
